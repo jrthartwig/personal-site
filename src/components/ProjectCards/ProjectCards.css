@@ -1,0 +1,6 @@
+.flex-wrapper {
+    display: flex;
+}
+.card {
+    justify-content: space-between;
+}
