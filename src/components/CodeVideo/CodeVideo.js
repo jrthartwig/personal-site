@@ -1,11 +1,11 @@
 import React from 'react';
-import './Header.css';
+import './CodeVideo.css';
 
-const Header = () => {
+const CodeVideo = () => {
     return (
        <div className="banner">
        </div> 
     )
 }
 
-export default Header;
+export default CodeVideo;

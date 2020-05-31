@@ -1,0 +1,10 @@
+.wrapper {
+    height: 100px;
+    background-color: #0C090A;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    margin: 25px;
+}

@@ -1,24 +1,61 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Nav from "react-bootstrap/Nav";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import {Nav, Navbar, NavItem} from 'react-bootstrap';
+import './App.css'
+import CodeVideo from "./components/CodeVideo/CodeVideo";
+import Resume from "./components/Resume/Resume";
+import Projects from "./components/Projects";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  const title = "title one";
+export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <Nav variant ="tabs" className="justify-content-center" activeKey="/home">
-        <Nav.Item>
-          <Nav.Link href="/home">Resume</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1">Projects</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/resume">Resume</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/">
+            <CodeVideo/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
-export default App;
+function Home() {
+  return <h2>Home</h2>;
+}
+
+function About() {
+  return <h2>About</h2>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
+}

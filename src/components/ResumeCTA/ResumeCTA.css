@@ -1,0 +1,12 @@
+.resume-wrapper {
+    height: 100px;
+    background-color:#0C090A;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.resume-button {
+    height: 50px;
+    align-self: center;
+    margin-left: 25px;
+}
