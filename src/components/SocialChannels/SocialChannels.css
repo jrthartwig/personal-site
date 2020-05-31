@@ -1,0 +1,20 @@
+.flex-wrapper {
+    display: flex;
+    padding-top: 30px;
+}
+.socials-wrapper {
+    align-content: flex-end;
+}
+
+.linkedin-social {
+    color: #0177B5;
+    padding: 10px;
+}
+.github-social {
+    color: #000;
+    padding: 10px; 
+}
+.codepen-social {
+    color: #000;
+    padding: 10px;
+}

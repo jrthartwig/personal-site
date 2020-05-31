@@ -6,6 +6,8 @@ import Positions from "../../components/Positions/Positions";
 import Meters from "../../components/Meters/Meters";
 import Credentials from "../../components/Credentials/Credentials";
 import "./Resume.css";
+import SocialChannels from "../../components/SocialChannels/SocialChannels";
+import ProfileBadge from "../../components/ProfileBadge/ProfileBadge";
 
 const Resume = () => {
   return (
@@ -13,21 +15,21 @@ const Resume = () => {
       <Row>
         <Col>
           <div>
+            <ProfileBadge />
+          </div>
+          <div>
+            <Meters />
+          </div>
+          <div>
+            <SocialChannels />
+          </div>
+        </Col>
+        <Col>
+          <div>
             <Positions />
           </div>
-        </Col>
-        <Col>
           <div>
             <Credentials />
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <div>
-            <div>
-              <Meters />
-            </div>
           </div>
         </Col>
       </Row>

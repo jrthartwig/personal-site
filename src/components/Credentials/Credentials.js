@@ -1,10 +1,11 @@
 import React from 'react'; 
 import Card from "react-bootstrap/Card";
+import './Credentials.css';
 
 const Credentials = () => {
     return(
         <div>
-        <div>
+        <div className="education">
           <Card>
             <Card.Header>Education</Card.Header>
             <Card.Body>
@@ -13,7 +14,7 @@ const Credentials = () => {
             </Card.Body>
           </Card>
         </div>
-        <div>
+        <div className="certifications">
           <Card>
             <Card.Header>Certifications</Card.Header>
             <Card.Body>
