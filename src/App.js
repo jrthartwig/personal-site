@@ -5,11 +5,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import {Nav, Navbar, NavItem} from 'react-bootstrap';
 import './App.css'
+import Projects from "./pages/Projects/Projects";
 import CodeVideo from "./components/CodeVideo/CodeVideo";
-import Resume from "./components/Resume/Resume";
-import Projects from "./components/Projects";
+import Resume from "./pages/Resume/Resume";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
@@ -46,16 +46,4 @@ export default function App() {
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
