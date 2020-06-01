@@ -14,7 +14,7 @@ export default function App() {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
+            <Nav defaultActiveKey="/">
               <Nav.Link as={Link} to="/" exact>
                 Home
               </Nav.Link>
