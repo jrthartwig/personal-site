@@ -2,15 +2,16 @@ import React from 'react';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Accordion from "react-bootstrap/Accordion";
+import "./Positions.css"
 
 const Positions = () => {
     return (    
-        <div>
+        <div className="positions-group">
         <Accordion defaultActiveKey="0">
-          <Card>
+          <Card border="info">
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                Associate Software Developer - Aptera Software, Inc.
+                Associate Software Developer - Aptera Software
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
@@ -19,10 +20,10 @@ const Positions = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card border="info">
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Business Analyst - Aptera Software, Inc.
+                Business Analyst - Aptera Software
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="1">
@@ -32,7 +33,7 @@ const Positions = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          <Card>
+          <Card border="info">
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="2">
                 Business Analyst/Content Manager - DisrupDev, LLC
@@ -46,7 +47,7 @@ const Positions = () => {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-        <Card>
+        <Card border="info">
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="3">
                 IT Business Analyst - Genuine Parts Company

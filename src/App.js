@@ -1,34 +1,32 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import './App.css'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "./App.css";
 import Projects from "./pages/Projects/Projects";
 import CodeVideo from "./components/CodeVideo/CodeVideo";
 import Resume from "./pages/Resume/Resume";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav>
+              <Nav.Link as={Link} to="/" exact>
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/projects">
+                Projects
+              </Nav.Link>
+              <Nav.Link as={Link} to="/resume">
+                Resume
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
         <Switch>
           <Route path="/projects">
             <Projects />
@@ -37,7 +35,7 @@ export default function App() {
             <Resume />
           </Route>
           <Route path="/">
-            <CodeVideo/>
+            <CodeVideo />
           </Route>
         </Switch>
       </div>

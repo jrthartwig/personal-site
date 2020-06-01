@@ -20,9 +20,6 @@ const Resume = () => {
           <div>
             <Meters />
           </div>
-          <div>
-            <SocialChannels />
-          </div>
         </Col>
         <Col>
           <div>

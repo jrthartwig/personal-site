@@ -1,14 +1,14 @@
 import React from "react";
-import "./Meters.css"
+import "./Meters.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3, faJs, faWindows, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const Meters = () => {
   return (
     <div className="meters-group">
-      <div>
-        <label for="html"> 
-        <FontAwesomeIcon icon={faHtml5} />
+      <div className="html">
+        <label for="html">
+          <FontAwesomeIcon icon={faHtml5}/>
         </label>
         <meter
           className="meter"
@@ -20,9 +20,10 @@ const Meters = () => {
           optimum="80"
           value="65"
         ></meter>
-        <div>
+        </div>
+        <div className="css">
           <label for="css">
-          <img src={require('./css.png')} />
+          <FontAwesomeIcon icon={faCss3} />
           </label>
           <meter
             className="meter"
@@ -35,9 +36,9 @@ const Meters = () => {
             value="65"
           ></meter>
         </div>
-        <div>
+        <div className="js">
           <label for="js">
-          <img src={require('./javascript.png')} />
+            <FontAwesomeIcon icon={faJs}/>
           </label>
           <meter
             className="meter"
@@ -50,9 +51,9 @@ const Meters = () => {
             value="60"
           ></meter>
         </div>
-        <div>
-          <label for="c#">
-          <img src={require('./c#.png')} />
+        <div className="csharp">
+          <label for="csharp">
+            <FontAwesomeIcon icon={faWindows} />
           </label>
           <meter
             className="meter"
@@ -65,9 +66,9 @@ const Meters = () => {
             value="50"
           ></meter>
         </div>
-        <div>
+        <div className="react">
           <label for="react">
-          <img src={require('./react.png')} />
+            <FontAwesomeIcon icon={faReact}/>
           </label>
           <meter
             className="meter"
@@ -81,7 +82,6 @@ const Meters = () => {
           ></meter>
         </div>
       </div>
-    </div>
   );
 };
 

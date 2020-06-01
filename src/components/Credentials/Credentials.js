@@ -6,7 +6,7 @@ const Credentials = () => {
     return(
         <div>
         <div className="education">
-          <Card>
+          <Card border="info">
             <Card.Header>Education</Card.Header>
             <Card.Body>
               <Card.Title>Ball State University</Card.Title>
@@ -15,7 +15,7 @@ const Credentials = () => {
           </Card>
         </div>
         <div className="certifications">
-          <Card>
+          <Card border="info">
             <Card.Header>Certifications</Card.Header>
             <Card.Body>
               <Card.Title>Udemy</Card.Title>

@@ -9,7 +9,6 @@ import "./SocialChannels.css";
 
 const SocialChannels = () => {
   return (
-    <div className="flex-wrapper">
       <div className="socials-wrapper">
         <a href="https://codepen.io/jhartwig" className="codepen-social">
           <FontAwesomeIcon icon={faCodepen} size="2x" />
@@ -24,7 +23,6 @@ const SocialChannels = () => {
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
       </div>
-    </div>
   );
 };
 
