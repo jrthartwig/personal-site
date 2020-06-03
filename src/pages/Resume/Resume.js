@@ -11,6 +11,7 @@ import ProfileBadge from "../../components/ProfileBadge/ProfileBadge";
 const Resume = () => {
   return (
     <div className="resume">
+      <main>
       <Container>
         <Row>
           <Col>
@@ -31,6 +32,7 @@ const Resume = () => {
           </Col>
         </Row>
       </Container>
+      </main>
     </div>
   );
 };

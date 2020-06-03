@@ -1,18 +1,17 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  padding-right: 8px;
-  padding-left: 8px;
-  padding-top: 8px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: black;
-  margin-top: 8px;
-}
 body {
   background: #6c757d;
+  flex-direction: column; /* creates rows out of the elements main and footer */
+  height: 100vh; 
+  width: 100%;
+  margin-bottom:0;
+}
+footer {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 56px;
+  background: #343a40;
+  color: black;
+}
+.content {
+  flex: 1 1 auto;
 }

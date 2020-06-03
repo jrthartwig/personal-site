@@ -10,7 +10,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function App() {
   return (
     <Router>
-      <div>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -27,6 +26,7 @@ export default function App() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+        <div className="content">
         <Switch>
           <Route path="/projects">
             <Projects />
@@ -38,7 +38,8 @@ export default function App() {
             <CodeVideo />
           </Route>
         </Switch>
-      </div>
+        </div>
+        <footer>This is a footer</footer>
     </Router>
   );
 }

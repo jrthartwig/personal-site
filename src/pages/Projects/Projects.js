@@ -1,10 +1,11 @@
 import React from 'react'; 
 import ProjectCards from "../../components/ProjectCards/ProjectCards";
+import "./Projects.css"
 
 
 const Projects = () => {
     return (  
-        <div>     
+        <div className="projects">     
             <ProjectCards />
             <ProjectCards />
         </div> 
